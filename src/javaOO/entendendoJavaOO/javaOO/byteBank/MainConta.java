@@ -1,6 +1,6 @@
 package javaOO.entendendoJavaOO.javaOO.byteBank;
 
-public class CriaConta {
+public class MainConta {
     public static void main(String[] args) {
         /*Conta primeiraConta = new Conta();
         primeiraConta.saldo = 200;
@@ -20,9 +20,13 @@ public class CriaConta {
         System.out.println("Saldo primeira conta: " + primeiraConta.saldo);*/
 
         Cliente paulo = new Cliente("Paulo", "123.456.789-0", "Programador");
-        Conta contaPaulo = new Conta();
-        contaPaulo.titular = paulo;
-        System.out.println(contaPaulo.titular.nome);
+//        Conta contaPaulo = new Conta();
+//        contaPaulo.setTitular(paulo);
+//        System.out.println(contaPaulo.getTitular().nome);
+
+        Conta newConta = new Conta();
+        newConta.setTitular(paulo);
+
 
     }
 }
